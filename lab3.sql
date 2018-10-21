@@ -74,8 +74,7 @@ SELECT employees.department, COUNT(*) FROM employees GROUP BY  employees.departm
 
 SELECT departments.code FROM departments WHERE (SELECT COUNT(*) FROM employees) > 2;
 
-SELECT DISTINCT budget
-FROM departments
+SELECT DISTINCT budget FROM departments
 ORDER  BY budget DESC
 OFFSET 1
 LIMIT  1;
